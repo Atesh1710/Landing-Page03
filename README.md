@@ -1,2 +1,2 @@
-Created a Animated Landing Page! 
-Tech Stack :- HTML CSS
+Created an Animated Landing Page! 
+Tech Stack :- HTML & CSS

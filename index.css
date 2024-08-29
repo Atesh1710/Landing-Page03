@@ -1,0 +1,128 @@
+@import url('https://fonts.cdnfonts.com/s/19595/MonumentExtended-Regular.woff');
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html body{
+    width: 100%;
+    height: 100vh;
+}
+#main{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    /* background-color: black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('https://images.unsplash.com/photo-1532453288672-3a27e9be9efd?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-position: center;
+    background-size: cover;
+}
+#main img{
+height: 600px;
+width: 400px;
+object-fit: cover;
+position: relative;
+z-index: 99;
+transition: transform 0.3s ease;
+}
+
+#text{
+font-size: 40px;
+position: absolute;
+font-size: monument;
+width:60%;
+z-index: 999;
+top: 16%;
+text-align: center;
+}
+#scroll-div{
+position: absolute;
+top:24%;
+width:100%;
+height: 140px;
+white-space:nowrap;
+overflow-x: auto;
+overflow-y: hidden;
+}
+#scroll-div::-webkit-scrollbar{
+display: none;
+}
+#scroll-div h1{
+display: inline-block;
+font-size: 120px;
+text-transform: uppercase;
+margin-right:30px;
+letter-spacing: 3px;
+font-family: monument;
+animation-name:scroll;
+animation-duration:1s;
+animation-timing-function: linear;
+animation-iteration-count:infinite ;
+}
+#scroll-div2{
+position: absolute;
+top:44%;
+width:100%;
+height: 140px;
+white-space:nowrap;
+z-index: 100;
+overflow-x: auto;
+overflow-y: hidden;
+}
+#scroll-div2::-webkit-scrollbar{
+display: none;
+}
+#scroll-div2 h1{
+display: inline-block;
+font-size: 120px;
+text-transform: uppercase;
+margin-right:30px;
+letter-spacing: 3px;
+font-family: monument;
+color: transparent;
+-webkit-text-stroke-color: #000;
+-webkit-text-stroke-width: 2px;
+animation-name:scroll;
+animation-duration:1s;
+animation-timing-function: linear;
+animation-iteration-count:infinite ;
+}
+#scroll-div3{
+position: absolute;
+top:64%;
+width:100%;
+height: 140px;
+white-space:nowrap;
+overflow-x: auto;
+overflow-y: hidden;
+}
+#scroll-div3::-webkit-scrollbar{
+display: none;
+}
+#scroll-div3 h1{
+display: inline-block;
+font-size: 130px;
+text-transform: uppercase;
+margin-right:30px;
+letter-spacing: 3px;
+font-family: monument;
+animation-name:scroll;
+animation-duration:1s;
+animation-timing-function: linear;
+animation-iteration-count:infinite ;
+animation-direction: reverse;
+}
+
+@keyframes scroll{
+0%{ /*from where animation start and 0% also serves the same */
+    transform: translateX(calc(-100% - 32px));
+}
+/* we use 0% to 100% so that we can also manage between intervals which is not possible with form and to*/
+
+100%{ /*t0 where animation go and 100% also serve same*/
+       transform: translateX(0);
+}
+}
